@@ -1,0 +1,79 @@
+Here are the answers to the questions about Python programming:
+
+Who developed Python Programming Language?
+
+Python was developed by Guido van Rossum and was first released in 1991.
+Which type of Programming does Python support?
+
+Python supports multiple programming paradigms, including procedural, object-oriented, and functional programming.
+Is Python case sensitive when dealing with identifiers?
+
+Yes, Python is case sensitive when dealing with identifiers. For example, Variable and variable would be considered different identifiers.
+What is the correct extension of the Python file?
+
+The correct extension for a Python file is .py.
+Is Python code compiled or interpreted?
+
+Python code is interpreted. It is executed line by line by the Python interpreter.
+Name a few blocks of code used to define in Python language?
+
+The common blocks of code used to define in Python are functions (def), classes (class), loops (for, while), and conditional statements (if, elif, else).
+State a character used to give single-line comments in Python?
+
+The character used to give single-line comments in Python is the hash symbol (#).
+Mention functions which can help us to find the version of python that we are currently working on.
+
+You can use the following functions to find the version of Python you are currently working on:
+python
+Copy code
+import sys
+print(sys.version)
+print(sys.version_info)
+Additionally, you can use the python --version or python -V command in the terminal.
+Python supports the creation of anonymous functions at runtime, using a construct called
+
+Python supports the creation of anonymous functions at runtime using a construct called lambda.
+What does pip stand for in Python?
+
+pip stands for "Pip Installs Packages" or "Pip Installs Python". It is a package management system used to install and manage software packages written in Python.
+Mention a few built-in functions in Python?
+
+Some built-in functions in Python include print(), len(), type(), int(), str(), sum(), max(), min(), abs(), list(), and dict().
+What is the maximum possible length of an identifier in Python?
+
+The maximum possible length of an identifier in Python is not explicitly defined, but it is generally up to 79 characters for readability purposes according to PEP 8 guidelines.
+What are the benefits of using Python?
+
+Benefits of using Python include:
+Easy to read and write syntax
+Extensive standard library
+Support for multiple programming paradigms
+Strong community support
+Compatibility with major platforms and systems
+High-level data structures
+Dynamic typing and automatic memory management
+How is memory managed in Python?
+
+Memory management in Python is handled by Python's own memory manager. The management involves:
+Private heap space where all Python objects and data structures are located
+Built-in garbage collector that recycles all the unused memory to make it available for heap space
+How to install Python on Windows and set path variables?
+
+To install Python on Windows:
+Download the Python installer from the official Python website.
+Run the installer and check the box that says "Add Python to PATH" during installation.
+Follow the installation prompts.
+To set the PATH variables manually:
+Open the Start Search, type in "environment variables", and select "Edit the system environment variables".
+In the System Properties window, click on the "Environment Variables" button.
+In the Environment Variables window, locate the "Path" variable in the "System variables" section and click on "Edit".
+Click on "New" and add the path to the Python installation directory (e.g., C:\Python39).
+Click OK to save the changes.
+Is indentation required in Python?
+
+Yes, indentation is required in Python. It is used to define the blocks of code. Proper indentation is crucial for the correct interpretation of the code structure by the Python interpreter.
+
+
+
+
+
