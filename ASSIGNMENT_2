@@ -1,0 +1,101 @@
+Q1. Explain with an example each when to use a for loop and a while loop.
+For Loop:
+
+A for loop is typically used when the number of iterations is known or when iterating over a sequence (like a list, tuple, dictionary, set, or string).
+Example: Iterating over a list of numbers to print each number.
+python
+
+numbers = [1, 2, 3, 4, 5]
+for num in numbers:
+    print(num)
+While Loop:
+
+A while loop is used when the number of iterations is not known and depends on a condition.
+Example: Printing numbers from 1 to 5 until a condition is met.
+python
+Copy code
+num = 1
+while num <= 5:
+    print(num)
+    num += 1
+Q2. Write a Python program to print the sum and product of the first 10 natural numbers using for and while loops.
+Using For Loop:
+
+python
+
+# Sum and product using for loop
+sum_for = 0
+product_for = 1
+for i in range(1, 11):
+    sum_for += i
+    product_for *= i
+
+print(f"Sum using for loop: {sum_for}")
+print(f"Product using for loop: {product_for}")
+Using While Loop:
+
+python
+
+# Sum and product using while loop
+sum_while = 0
+product_while = 1
+i = 1
+while i <= 10:
+    sum_while += i
+    product_while *= i
+    i += 1
+
+print(f"Sum using while loop: {sum_while}")
+print(f"Product using while loop: {product_while}")
+Q3. Create a Python program to compute the electricity bill for a household.
+python
+Copy code
+units = int(input("Enter the units of electricity consumed in a month: "))
+bill = 0
+
+if units <= 100:
+    bill = units * 4.5
+elif units <= 200:
+    bill = (100 * 4.5) + ((units - 100) * 6)
+elif units <= 300:
+    bill = (100 * 4.5) + (100 * 6) + ((units - 200) * 10)
+else:
+    bill = (100 * 4.5) + (100 * 6) + (100 * 10) + ((units - 300) * 20)
+
+print(f"The total electricity bill is: Rs. {bill}")
+Q4. Create a list of numbers from 1 to 100 and calculate the cube of each number, appending numbers whose cubes are divisible by 4 or 5 to a list.
+python
+
+numbers = list(range(1, 101))
+result = []
+
+# Using for loop
+for num in numbers:
+    cube = num ** 3
+    if cube % 4 == 0 or cube % 5 == 0:
+        result.append(num)
+
+print("Using for loop:", result)
+
+# Using while loop
+i = 1
+result_while = []
+while i <= 100:
+    cube = i ** 3
+    if cube % 4 == 0 or cube % 5 == 0:
+        result_while.append(i)
+    i += 1
+
+print("Using while loop:", result_while)
+Q5. Write a program to filter and count vowels in the given string.
+python
+
+string = "I want to become a data scientist"
+vowels = "aeiouAEIOU"
+vowel_count = 0
+
+for char in string:
+    if char in vowels:
+        vowel_count += 1
+
+print(f"Number of vowels in the string: {vowel_count}")
